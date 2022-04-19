@@ -1,0 +1,22 @@
+<b>Проект:</b> {{.Project}}
+
+Задача <a href="http://redmine.infougra.ru:60080/issues/{{.IssueID}}">#{{.IssueID}}</a> {{.Action}}.
+
+<b>Тема:</b> {{.Subject}}
+<b>Описание:</b> {{.Description}}
+<b>Телефон:</b> {{.PhoneNumber}}
+<b>Адрес:</b> {{.Address}}
+<b>Статус:</b> {{.Status}}
+<b>Назначена:</b> {{.Assignee}}
+
+{{with .Author}}-------------------------------
+
+<b>{{.}} обновил(а) заявку.</b>{{end}}
+{{with .Notes}}
+<b>Примечание:</b>
+{{.}}
+{{end}}
+{{- range .Journals}}{{if eq .DetailType 1}}
+- Параметр <b>{{.Name}}</b> изменен с <b>{{.OldValue}}</b> на <b>{{.NewValue}}</b>.{{else if eq .DetailType 2}}
+- Значение <b>{{.OldValue}}</b> параметра <b>{{.Name}}</b> удалено.{{else if eq .DetailType 3}}
+- Параметр <b>{{.Name}}</b> изменен на <b>{{.NewValue}}</b>.{{end}}{{- end}}

@@ -1,0 +1,14 @@
+version: "3.4"
+
+services:
+  tgbot_counters_infougra:
+    image: vk_counter_plomb_bot
+    hostname: tgbot_vk
+    restart: always
+    expose:
+      - "8880"
+    volumes:
+      - ./config.toml:/app/config.toml
+      - ./database_vk_plomb.db:/app/database.db
+    # depends_on:
+    #   - redmine

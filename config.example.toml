@@ -1,0 +1,10 @@
+DbFile = "database.db"
+RedmineToken = ""
+RedmineHost = ""
+RedmineAPIHost = ""
+WebhookHost = "0.0.0.0"
+WebhookPort = 8877
+TgToken = ""
+Debug = "true"
+QueueSize = 10
+NotificationTemplate = "./notification.tmpl"

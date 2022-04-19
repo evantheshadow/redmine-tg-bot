@@ -1,0 +1,17 @@
+DbFile = "database_vk_plomb.db"
+RedmineToken = "e03345e42a12b5fc3ad0b58ea513db1cf023ab5a"
+RedmineAPIHost = "http://redmine.infougra.ru:60080/"
+RedmineHost = "http://redmine.infougra.ru:60080/"
+WebhookHost = "10.0.0.120"
+WebhookPort = 8881
+TgToken = "2111016997:AAFRGfygDg5CZTzZGsekwZ-4hnN_iUfIePY"
+Debug = "true"
+QueueSize = 10
+NotificationTemplate = "./notification.tmpl"
+
+# [Proxy]
+#     Scheme = "http"
+#     Host = "51.15.244.197"
+#     Port = 1082
+#     User = "redminetg"
+#     Password = "0nRedminetgbotr00t"
